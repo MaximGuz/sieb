@@ -1,0 +1,27 @@
+.mts-inspect-grp{
+	width: 300px;
+}
+.mts-popup-btn{
+	width: 32px;
+	height: 32px;
+	border: none;
+	padding: 8px 8px 8px 8px;
+	float: left;
+}
+.mts-inspect-popup-btn{
+	background: url("inspect_32.png");
+}
+.mts-reload-inspect-popup-btn{
+	background: url("reload_inspect_32.png");
+}
+.mts-inspect-hide{
+	display:none;
+}
+.inspect-ws-select-container{
+	float: left;
+	width: 200px;
+	padding: 12px 0 0 0;
+}
+.inspect-ws-select{
+	width: 100%;
+}	
