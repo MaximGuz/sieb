@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "MTS Siebel Inspect Launcher",
+  "description": "Запускает Siebel Inspect на выбранном DEV WS",
+  "version": "0.0.1",
+  "icons": {"128": "reload_inspect_128.png"},
+  "action":{
+	"default_popup": "popup.html"
+  },
+  "permissions": [
+        "scripting", "activeTab"
+   ],
+   "content_scripts": [{
+        "matches": ["https://*/siebel/app/*"],
+        "run_at": "document_idle",
+        "js": ["content.js"]
+    }],
+	"web_accessible_resources": [
+		{
+			"resources": ["injected.js", "mts_inspect.css"],
+			"matches": ["https://sbl-dev-v01-lv.mbrd.ru/*", "https://sbl-dev-v01-lv/*", "https://smeapp-dev-v1lv/*", "https://smeapp-dev-v1lv.mbrd.ru/*"]
+		}       
+    ]
+}
